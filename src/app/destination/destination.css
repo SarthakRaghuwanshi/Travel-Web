@@ -1,0 +1,232 @@
+.destination-hero {
+  display: flex;
+  justify-content: space-between;
+  width: 1104px;
+  height: 351.554px;
+  margin-top: 96px;
+}
+
+.destination-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 480px;
+  height: 100%;
+  padding-bottom: 24px;
+}
+
+.destination-copy-main {
+  width: 480px;
+  height: 143.554px;
+}
+
+.destination-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.destination-flag {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.destination-switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.destination-switch {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: rgba(245, 244, 247, 0.62);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.destination-switch.is-active {
+  color: #ffffff;
+}
+
+.destination-kicker {
+  width: 282px;
+  height: 48px;
+  margin: 15px 0 0;
+  display: block;
+  color: #ffa400;
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+  transform: rotate(4deg);
+  transform-origin: left center;
+}
+
+.destination-title {
+  width: 119px;
+  height: 80px;
+  margin: 20px 0 0;
+  color: #ffffff;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+}
+
+.destination-pills {
+  display: flex;
+  gap: 16px;
+  margin-top: 112px;
+}
+
+.info-pill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  padding: 3px 5px;
+  border-radius: 8px;
+  background: #e2cffd29;
+}
+
+.info-pill-duration {
+  width: 129px;
+  height: 56px;
+}
+
+.info-pill-visa {
+  width: 127px;
+  height: 56px;
+}
+
+.info-label {
+  width: 87px;
+  height: 16px;
+  margin-bottom: 8px;
+  color: rgba(245, 244, 247, 0.72);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.info-value {
+  width: 100%;
+  height: 20px;
+  color: #f5f4f7;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.destination-visual {
+  position: relative;
+  width: 630px;
+  height: 301px;
+  margin-top: 59px;
+}
+
+.destination-map {
+  display: block;
+  width: 630px;
+  height: 301px;
+  object-fit: contain;
+  object-position: center;
+  opacity: 0.9;
+  mix-blend-mode: screen;
+}
+
+.months-panel {
+  position: absolute;
+  left: 0;
+  bottom: -47px;
+  width: 520px;
+  height: 148px;
+}
+
+.months-label {
+  width: 121px;
+  height: 16px;
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+}
+
+.months-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 8px;
+  width: 520px;
+  height: 132px;
+  align-items: end;
+}
+
+.month-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  min-width: 0;
+  padding: 6px 0 5px;
+  border-radius: 4px 4px 0 0;
+}
+
+.tone-sunny {
+  background: #0f8f77;
+}
+
+.tone-cloudy {
+  background: #13958d;
+}
+
+.tone-rainy {
+  background: #b77900;
+}
+
+.tone-highrainy {
+  background: #9e2e3a;
+}
+
+.month-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.month-temp,
+.month-name {
+  color: #ffffff;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.month-temp {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.month-name {
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 10px;
+}

@@ -1,0 +1,68 @@
+<section class="destination-hero">
+  <div class="destination-copy">
+    <div class="destination-copy-main">
+      <div class="destination-topbar">
+        <img
+          class="destination-flag"
+          [src]="selectedDestination.flag"
+          [alt]="selectedDestination.name + ' flag'"
+        />
+
+        <div class="destination-switcher">
+          <button
+            *ngFor="let destination of destinations"
+            type="button"
+            class="destination-switch"
+            [class.is-active]="destination.id === selectedDestination.id"
+            (click)="selectDestination(destination.id)"
+          >
+            {{ destination.name }}
+          </button>
+        </div>
+      </div>
+
+      <p class="destination-kicker">Readymade trip plans for</p>
+      <h1 class="destination-title">{{ selectedDestination.name }}</h1>
+    </div>
+
+    <div class="destination-pills">
+      <div class="info-pill info-pill-duration">
+        <span class="info-label">Ideal duration</span>
+        <span class="info-value">12-15 days</span>
+      </div>
+
+      <div class="info-pill info-pill-visa">
+        <span class="info-label">Visa info</span>
+        <span class="info-value">eVisa - 15 days</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="destination-visual">
+    <img
+      class="destination-map"
+      [src]="selectedDestination.mapImage"
+      [alt]="selectedDestination.name + ' map'"
+    />
+
+    <div class="months-panel">
+      <p class="months-label">BEST MONTHS TO VISIT</p>
+
+      <div class="months-grid">
+        <article
+          *ngFor="let month of selectedDestination.bestMonths"
+          class="month-card"
+          [style.height.px]="month.height"
+          [class.tone-sunny]="month.tone === 'sunny'"
+          [class.tone-cloudy]="month.tone === 'cloudy'"
+          [class.tone-rainy]="month.tone === 'rainy'"
+          [class.tone-highrainy]="month.tone === 'highrainy'"
+        >
+          <img class="month-icon" [src]="month.icon" [alt]="month.month + ' weather'" />
+          <span class="month-temp">{{ month.temp }}</span>
+          <span class="month-name">{{ month.month }}</span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

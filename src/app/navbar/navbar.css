@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  height: 42px;
+}
+
+.brand-mark {
+  display: block;
+  width: 128px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 42px;
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.nav-button-secondary {
+  width: 63px;
+  height: 42px;
+  padding: 12px;
+  color: #f5f4f7;
+  background: transparent;
+  border: 1px solid #dfdde0;
+  border-radius: 12px;
+}
+
+.nav-button-primary {
+  width: 98px;
+  height: 42px;
+  padding: 12px;
+  color: #f5f4f7;
+  background: #7011f6;
+  border-radius: 8px;
+}

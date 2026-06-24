@@ -1,0 +1,249 @@
+.trip-footer {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.trip-footer-card {
+  position: relative;
+  width: 1280px;
+  height: 142px;
+  overflow: hidden;
+  border: 1px solid #dfdde0;
+  border-radius: 24px;
+  background:
+    radial-gradient(54.63% 65.94% at 50% 0%, rgba(255, 255, 255, 0.12) 0%, #ffffff 100%);
+  box-shadow: 0 10px 28px rgba(18, 18, 18, 0.08);
+}
+
+.trip-footer-wash {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.trip-footer-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0.82) 58%, rgba(255, 255, 255, 0.96) 100%);
+  pointer-events: none;
+}
+
+.trip-footer-heading {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 18px auto 0;
+}
+
+.trip-footer-title {
+  min-width: 236px;
+  height: 20px;
+  margin: 0;
+  color: #19181b;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 645;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.trip-footer-title span {
+  color: #7011f6;
+}
+
+.trip-footer-subtitle {
+  margin: 4px 0 0;
+  color: rgba(25, 24, 27, 0.62);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+
+.trip-footer-options {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  width: 1048px;
+  height: 46px;
+  margin: 18px auto 0;
+  gap: 24px;
+}
+
+.trip-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  padding-left: 6px;
+  padding-right: 24px;
+  border-right: 1px solid rgba(25, 24, 27, 0.12);
+}
+
+.trip-option-last {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.trip-option-icon {
+  width: 22px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.trip-option-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.trip-option-label {
+  color: rgba(25, 24, 27, 0.72);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+}
+
+.trip-option-value {
+  color: #19181b;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.trip-option-caret {
+  margin-left: auto;
+  color: #19181b;
+  font-size: 14px;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+.trip-footer-toolbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1280px;
+  height: 66px;
+  padding: 8px 6px 4px;
+  background: #f5f4f7;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.trip-footer-chips {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 930px;
+}
+
+.trip-chip {
+  height: 28px;
+  padding: 0 16px;
+  border: 1px solid #dfdde0;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #19181b;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.trip-chip-active {
+  border-color: #7011f6;
+  background: #e2cffd;
+  color: #7011f6;
+}
+
+.trip-footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 2px;
+}
+
+.trip-results {
+  color: rgba(25, 24, 27, 0.72);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.trip-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 14px;
+  border: 1px solid #19181b;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #19181b;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.trip-sort-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.trip-footer-more {
+  display: flex;
+  justify-content: center;
+  width: 1280px;
+  margin-top: -2px;
+}
+
+.trip-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: #e2cffd;
+  color: #7011f6;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.trip-more-caret {
+  width: 8px;
+  height: 8px;
+  border-right: 1.8px solid currentColor;
+  border-bottom: 1.8px solid currentColor;
+  transform: translateY(-1px) rotate(45deg);
+}
